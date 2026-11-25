@@ -8,7 +8,7 @@ export default function ToggleThemeButton() {
 
     return (
         <button className="flex items-center justify-center p-2 cursor-pointer" onClick={() => {
-            setTheme(theme == "light" ? "dark" : "light")
+            setTheme(theme == "dark" ? "light" : "dark")
         }}>
             {theme === "light" ? <Sun /> : <Moon />}
         </button>

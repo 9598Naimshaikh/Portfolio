@@ -1,4 +1,6 @@
 import { ArrowDownToLine, BriefcaseBusiness, SquareArrowUpRightExit } from "lucide-react";
+import { Github, Instagram, Linkedin, TwitterX, Youtube } from "@boxicons/react";
+import Link from "next/link";
 
 const data = {
   name: "Naeem Shaikh",
@@ -19,12 +21,12 @@ export default function First_part() {
       </div>
 
       <h1 className="font-bold tracking-wide text-3xl">
-        Hi, I&apos;m <span className="text-blue-500">Naeem Shaikh</span>
+        Hi, I&apos;m <span className="text-blue-500">{data.name}</span>
       </h1>
 
-      <h2 className="font-bold text-xl">Full Stack Web Developer</h2>
+      <h2 className="font-bold text-xl">{data.occ}</h2>
 
-      <p className="max-w-md">I build modern and responsive web applications using MERN stack. Let&apos;s create something amazing togather!</p>
+      <p className="max-w-md">{data.description}</p>
 
       <div className="my-5 flex items-center gap-4">
         <button className="flex items-center justify-center gap-3 bg-linear-270 to-cyan-600 from-purple-600 text-white px-4 py-2">
@@ -35,6 +37,14 @@ export default function First_part() {
             <span>Download CV</span>
             <ArrowDownToLine className="w-5" />
         </button>
+      </div>
+
+      <div className="flex items-center gap-4">
+        <Link href=""><Github pack="brands" className="w-6 h-6" /></Link>
+        <Link href=""><Linkedin pack="brands" className="w-6 h-6" /></Link>
+        <Link href=""><TwitterX pack="brands" className="w-6 h-6" /></Link>
+        <Link href=""><Youtube pack="brands" className="w-6 h-6" /></Link>
+        <Link href=""><Instagram pack="brands" className="w-6 h-6" /></Link>
       </div>
     </div>
   );
