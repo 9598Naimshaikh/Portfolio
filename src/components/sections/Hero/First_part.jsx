@@ -10,7 +10,8 @@ const data = {
   github: "https://github.com/9598Naimshaikh",
   linkedin: "https://www.linkedin.com/in/naeem-shaikh-9032b5289/",
   xtwitter: "https://x.com/Naim_Shaikh90",
-  instagram: "",
+  youtube: "https://www.youtube.com/@codewithnaim529",
+  instagram: "https://www.instagram.com/naim_shaikh.ss",
 };
 export default function First_part() {
   return (
@@ -40,11 +41,11 @@ export default function First_part() {
       </div>
 
       <div className="flex items-center gap-4">
-        <Link href=""><Github pack="brands" className="w-6 h-6" /></Link>
-        <Link href=""><Linkedin pack="brands" className="w-6 h-6" /></Link>
-        <Link href=""><TwitterX pack="brands" className="w-6 h-6" /></Link>
-        <Link href=""><Youtube pack="brands" className="w-6 h-6" /></Link>
-        <Link href=""><Instagram pack="brands" className="w-6 h-6" /></Link>
+        <Link href={data.github} target="_"><Github pack="brands" className="w-6 h-6" /></Link>
+        <Link href={data.linkedin} target="_"><Linkedin pack="brands" className="w-6 h-6" /></Link>
+        <Link href={data.xtwitter} target="_"><TwitterX pack="brands" className="w-6 h-6" /></Link>
+        <Link href={data.youtube} target="_"><Youtube pack="brands" className="w-6 h-6" /></Link>
+        <Link href={data.instagram} target="_"><Instagram pack="brands" className="w-6 h-6" /></Link>
       </div>
     </div>
   );
